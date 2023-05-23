@@ -63,3 +63,30 @@ const questions = [
         ],
       },
   ];
+
+  let currentQuestionIndex = 0;
+  let score = 0;
+
+  const questionElement = document.getElementById("question");
+  const answerButtons = document.getElementById("answers");
+  const nextButton = document.getElementById("next-button");
+  const scoreElement = document.getElementById("score");
+
+  function startQuiz()
+
+
+
+  function displayQuestion()
+
+
+
+  function checkAnswer(correct, answerButton)
+
+
+
+  function nextQuestion()
+
+
+  
+  function showResults()
+
