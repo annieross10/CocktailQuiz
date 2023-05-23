@@ -81,16 +81,19 @@ const questions = [
   
 
   // DOM elements
+  const startPage = document.getElementById("start-page");
+  const startButton = document.getElementById("start-button");
   const questionElement = document.getElementById("question");
   const answerButtons = document.getElementsByClassName("answers");
   const nextButton = document.getElementById("next-button");
   const scoreElement = document.getElementById("score");
-  const startButton = document.getElementById("start-button");
+  
   const quizContainer = document.getElementById("quiz-container");
+
   
 // Function to start the quiz
     function startQuiz() {
-    startButton.style.display = "none";
+    startPage.style.display = "none";
     quizContainer.classList.add("show");
     initializeQuiz();
   }
