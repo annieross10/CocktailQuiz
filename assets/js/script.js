@@ -1,3 +1,4 @@
+// quiz questions and answers
 const questions = [
     {
       question: "What is the main ingredient used in the production of Scottish Whiskey?",
@@ -62,16 +63,31 @@ const questions = [
           { text: "Heather", correctAnswer: false },
         ],
       },
+      {
+        question: "What is the minimum aging requirement for Scotch whiskey?  ",
+        answers: [
+          { text: "2 years", correctAnswer: false },
+          { text: "5 years", correctAnswer: false },
+          { text: "10 years", correctAnswer: true },
+          { text: "15 years", correctAnswer: false },
+        ],
+      },
   ];
 
+
+  // variables
   let currentQuestionIndex = 0;
   let score = 0;
   
+
+  // DOM elements
   const questionElement = document.getElementById("question");
   const answerButtons = document.getElementsByClassName("answers");
   const nextButton = document.getElementById("next-button");
   const scoreElement = document.getElementById("score");
   
+
+  // Function to initialize the quiz
   function initializeQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -80,6 +96,7 @@ const questions = [
     displayQuestion();
   }
   
+  // Function to display a question
   function displayQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
@@ -90,16 +107,24 @@ const questions = [
         answerButton.textContent = answer.text;
         answerButton.disabled = false;
         answerButton.classList.remove("correct", "incorrect");
-    
-        answerButton.addEventListener("click", () => {
-          answerButton.disabled = true;
-          checkAnswer(answer.correctAnswer, answerButton);
-          nextButton.disabled = false;
-        });
+
+        // Remove any existing click event listeners and add a new one
+        answerButton.removeEventListener("click", answerButtonClickHandler);
+        answerButton.addEventListener("click", answerButtonClickHandler);
       }
-  }
+    }
+    
+    // Click event handler for answer buttons
+    function answerButtonClickHandler() {
+      const answerButton = this;
+      answerButton.disabled = true;
+      const answer = questions[currentQuestionIndex].answers[Array.from(answerButtons).indexOf(answerButton)];
+      checkAnswer(answer.correctAnswer, answerButton);
+      nextButton.disabled = false;
+    }
   
-  function checkAnswer(correct, answerButton) {
+    // Function to check the answer
+    function checkAnswer(correct, answerButton) {
         if (correct) {
       answerButton.classList.add("correct");
       score++;
@@ -112,7 +137,7 @@ const questions = [
         scoreElement.textContent = `Score: ${score}`;
   }
   
-  
+  // Function to move to the next question
   function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -123,6 +148,7 @@ const questions = [
     }
   }
   
+  // Function to display the quiz results
   function showResults() {
     const quizContainer = document.getElementById("quiz-container");
     quizContainer.innerHTML = 
@@ -130,6 +156,10 @@ const questions = [
       <p>Your Score: ${score}</p>`;
   }
 
+  
+  // Event listener for the "Next" button
   nextButton.addEventListener("click", nextQuestion);
   
+
+  // Initialize the quiz
   initializeQuiz();
