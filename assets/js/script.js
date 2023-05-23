@@ -1,7 +1,7 @@
 // quiz questions and answers
 const questions = [
     {
-      question: "What is the main ingredient used in the production of Scottish Whiskey?",
+      question: "What is the main ingredient used in the production of Scottish Whisky?",
       answers: [
         { text: "Barley", correctAnswer: true },
         { text: "Rye", correctAnswer: false },
@@ -10,7 +10,7 @@ const questions = [
       ],
     },
     {
-      question: "Which region of Scotland is known for producing whiskey with a distinctive smoky flavour?",
+      question: "Which region of Scotland is known for producing whisky with a distinctive smoky flavour?",
       answers: [
         { text: "Speyside", correctAnswer: false },
         { text: "Highlands", correctAnswer: false },
@@ -19,7 +19,7 @@ const questions = [
       ],
     },
     {
-      question: "Which well-known Scottish Whiskey brand uses a stag's head as its logo?",
+      question: "Which well-known Scottish Whisky brand uses a stag's head as its logo?",
       answers: [
         { text: "Talisker", correctAnswer: false },
         { text: "Dalmore", correctAnswer: true },
@@ -28,7 +28,7 @@ const questions = [
       ],
     },
     {
-      question: "Which Scottish whiskey is often called the The King of Malts and is known for its smooth, honeyed character? ",
+      question: "Which Scottish whisky is often called the The King of Malts and is known for its smooth, honeyed character? ",
       answers: [
         { text: "Talisker", correctAnswer: false },
         { text: "Balvenie", correctAnswer: false },
@@ -37,7 +37,7 @@ const questions = [
       ],
     },
     {
-      question: "Which Scottish whiskey is made exclusively from malted barley and produced in a single distillery? ",
+      question: "Which Scottish whisky is made exclusively from malted barley and produced in a single distillery? ",
       answers: [
         { text: "Glenmorangie", correctAnswer: true },
         { text: "Johnnie Walker", correctAnswer: false },
@@ -46,7 +46,7 @@ const questions = [
       ],
     },
     {
-        question: "Which Scottish whiskey is known for its peaty and smoky flavor, often described as medicinal? ",
+        question: "Which Scottish whisky is known for its peaty and smoky flavor, often described as medicinal? ",
         answers: [
           { text: "Dalwhinnie", correctAnswer: false },
           { text: "Glenlivet", correctAnswer: false },
@@ -55,7 +55,7 @@ const questions = [
         ],
       },
       {
-        question: "What is the traditional ingredient used in the production of Talisker whiskey that gives it a unique maritime character?  ",
+        question: "What is the traditional ingredient used in the production of Talisker whisky that gives it a unique maritime character?  ",
         answers: [
           { text: "Brine", correctAnswer: true },
           { text: "Seaweed", correctAnswer: false },
@@ -64,7 +64,7 @@ const questions = [
         ],
       },
       {
-        question: "What is the minimum aging requirement for Scotch whiskey?  ",
+        question: "What is the minimum aging requirement for Scotch whisky?  ",
         answers: [
           { text: "2 years", correctAnswer: false },
           { text: "5 years", correctAnswer: false },

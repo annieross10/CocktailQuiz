@@ -7,24 +7,28 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <div id="start">
-        <button id="start-button">Start Quiz</button>
+    <div id="start-page">
+        <h1>Welcome to the Whisky Quiz!<i class="fa-solid fa-whiskey-glass-ice"></i></h1>
+        <p>Test your knowledge about Scottish Whisky. Click the Start button to begin the quiz.</p>
+        <div id="whiskyimage"></div>
+    
+        <button id="start-button"><strong>Start Quiz</strong></button>
     </div>
     <div id="quiz-container">
-        <h1>Whiskey Quiz</h1>
-        <div id="question-container">
+        <h1>Whisky Quiz</h1>
+        <div id="question-container" class="hidden">
           <p id="question"></p>
           <button class="answers">answer1</button>
           <button class="answers">answer2</button>
           <button class="answers">answer3</button>
           <button class="answers">answer4</button>
         </div>
-        <button id="next-button" disabled>Next</button>
-        <p id="score" display: hidden>Score: 0</p>
+        <button id="next-button" disabled><strong>Next</strong></button>
+        <p id="score" style="display: none;">Score: 0</p>
       </div>
       
     </div>
-      
+    <script src="assets/js/script.js"></script>
 </body>
-<script src="assets/js/script.js"></script>
+
 </html>
