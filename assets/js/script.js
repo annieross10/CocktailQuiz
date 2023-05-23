@@ -87,8 +87,8 @@ const questions = [
   const answerButtons = document.getElementsByClassName("answers");
   const nextButton = document.getElementById("next-button");
   const scoreElement = document.getElementById("score");
-  
   const quizContainer = document.getElementById("quiz-container");
+  
 
   
 // Function to start the quiz
@@ -166,12 +166,19 @@ const questions = [
   // Function to display the quiz results
   function showResults() {
     const quizContainer = document.getElementById("quiz-container");
-    quizContainer.innerHTML = 
-    `<h1>Quiz Results</h1>
-      <p>Your Score: ${score}</p>`;
-   
+    let message;
+    if (score === 8) {
+      message = "Congratulations! You scored a perfect 8 out of 8!";
+    } else if (score >= 5) {
+      message = `Good job! You scored ${score} out of 8.`;
+    } else {
+      message = `You scored ${score} out of 8. Keep practicing!`;
+    }
+    quizContainer.innerHTML = `
+      <h1>Quiz Results</h1>
+      <p>${message}</p>
+    `;
   }
-
 
   // Event listener for the "Next" button
   nextButton.addEventListener("click", nextQuestion);
