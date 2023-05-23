@@ -2,11 +2,31 @@
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 body {
-    background-color: #c5af2fa8;
+    background: linear-gradient(#794053, #c0ac5ad0);
+    background-attachment: fixed;
     padding-top:60px;
+}
+
+#whiskyimage {
+    background: url('../images/whiskyimage.png') no-repeat center center;
+    width: 90%;
+ /* Adjust the width as desired */
+  height: 350px; /* Maintain aspect ratio */
+  margin: 0 auto;
+  background-size: contain; /* Fit the image within the container without cropping */
+}
+
+#start-page h1{
+    padding-top: 10px
+}
+
+#start-page p{
+    padding-top: 5px;
+    text-align: center
 }
 
 #quiz-container {
@@ -23,7 +43,7 @@ body {
   }
  
 
-h1 {
+#quiz-container h1 {
     font-weight: 25px;
     text-align: center;
 }
@@ -52,10 +72,11 @@ h1 {
 }
 
 #next-button {
-    background: #001e4d;
+    background: #352430;
     color: #fff;
     padding: 10px;
     width: 100px;
+
 }
 
 #start-page {
@@ -67,7 +88,7 @@ h1 {
 }
 
 #start-button {
-    background: #001e4d;
+    background: #352430;
     color: #fff;
     padding: 10px;
     width: 100px;
