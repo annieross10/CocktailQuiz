@@ -113,12 +113,22 @@ const questions = [
   }
   
   
-  function nextQuestion() 
-
+  function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+      displayQuestion();
+      nextButton.disabled = true;
+    } else {
+      showResults();
+    }
+  }
   
-  function showResults() 
-  
-
+  function showResults() {
+    const quizContainer = document.getElementById("quiz-container");
+    quizContainer.innerHTML = 
+    `<h1>Quiz Results</h1>
+      <p>Your Score: ${score}</p>`;
+  }
 
   nextButton.addEventListener("click", nextQuestion);
   
