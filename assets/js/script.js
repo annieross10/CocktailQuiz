@@ -66,27 +66,60 @@ const questions = [
 
   let currentQuestionIndex = 0;
   let score = 0;
-
+  
   const questionElement = document.getElementById("question");
-  const answerButtons = document.getElementById("answers");
+  const answerButtons = document.getElementsByClassName("answers");
   const nextButton = document.getElementById("next-button");
   const scoreElement = document.getElementById("score");
-
-  function startQuiz()
-
-
-
-  function displayQuestion()
-
-
-
-  function checkAnswer(correct, answerButton)
-
-
-
-  function nextQuestion()
-
+  
+  function initializeQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    scoreElement.textContent = `Score: ${score}`;
+    nextButton.disabled = true;
+    displayQuestion();
+  }
+  
+  function displayQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.question;
+  
+    for (let i = 0; i < answerButtons.length; i++) {
+        const answerButton = answerButtons[i];
+        const answer = currentQuestion.answers[i];
+        answerButton.textContent = answer.text;
+        answerButton.disabled = false;
+        answerButton.classList.remove("correct", "incorrect");
+    
+        answerButton.addEventListener("click", () => {
+          answerButton.disabled = true;
+          checkAnswer(answer.correctAnswer, answerButton);
+          nextButton.disabled = false;
+        });
+      }
+  }
+  
+  function checkAnswer(correct, answerButton) {
+        if (correct) {
+      answerButton.classList.add("correct");
+      score++;
+        } else {
+      answerButton.classList.add("incorrect");
+        }
+        for (let i = 0; i < answerButtons.length; i++) {
+      answerButtons[i].disabled = true;
+        }
+        scoreElement.textContent = `Score: ${score}`;
+  }
+  
+  
+  function nextQuestion() 
 
   
-  function showResults()
+  function showResults() 
+  
 
+
+  nextButton.addEventListener("click", nextQuestion);
+  
+  initializeQuiz();
