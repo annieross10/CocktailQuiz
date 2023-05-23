@@ -85,7 +85,19 @@ const questions = [
   const answerButtons = document.getElementsByClassName("answers");
   const nextButton = document.getElementById("next-button");
   const scoreElement = document.getElementById("score");
+  const startButton = document.getElementById("start-button");
+  const quizContainer = document.getElementById("quiz-container");
   
+// Function to start the quiz
+    function startQuiz() {
+    startButton.style.display = "none";
+    quizContainer.classList.add("show");
+    initializeQuiz();
+  }
+  
+  // Event listener for the "Start" button
+  startButton.addEventListener("click", startQuiz);
+
 
   // Function to initialize the quiz
   function initializeQuiz() {
@@ -154,9 +166,10 @@ const questions = [
     quizContainer.innerHTML = 
     `<h1>Quiz Results</h1>
       <p>Your Score: ${score}</p>`;
+   
   }
 
-  
+
   // Event listener for the "Next" button
   nextButton.addEventListener("click", nextQuestion);
   
