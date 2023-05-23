@@ -173,7 +173,9 @@ function showResults() {
   <div class="quiz-results">
     <h1>Quiz Results</h1>
     <p>${message}</p>
+    <div id="whiskyimagetwo"></div>
   </div>
+ 
 `
 }
 

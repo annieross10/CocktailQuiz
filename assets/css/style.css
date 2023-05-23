@@ -5,7 +5,7 @@
   }
   
   body {
-    background: linear-gradient(#794053, #ce7e23d0);
+    background: linear-gradient(#7e3f3f, #dfae77d0);
     background-attachment: fixed;
     padding-top: 60px;
   }
@@ -60,6 +60,7 @@
   
   #question-container {
     padding: 15px;
+    text-align: center;
   }
   
   #question {
@@ -78,7 +79,7 @@
   }
   
   .answers:hover:not([disabled]) {
-    background: #1b191b77;
+    background: #7e3f3f;
     color: #fff;
   }
   
@@ -88,6 +89,9 @@
     color: #fff;
     padding: 10px;
     width: 100px;
+  }
+  #next-button-container {
+    text-align: center;
   }
   
   #start-button {
@@ -105,12 +109,26 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 50px;
-    height:100px;
+    height:400px;
   }
 
    .quiz-results h1 {
     padding-bottom: 20px;
   }
+
+  .quiz-results p {
+    padding-bottom: 20px;
+  }
+
+  #whiskyimagetwo {
+    background: url('../images/whiskyimagetwo.png') no-repeat center center;
+    width: 90%;
+    padding-top: 60px;
+    height: 290px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+
   
   /*Correct and Incorrect Answers*/
   .correct {
