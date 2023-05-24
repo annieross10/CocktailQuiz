@@ -1,8 +1,33 @@
 # whiskyquiz
-Welcome to the Scottish Whisky Quiz! Get ready to put your knowledge to the test with 8 exciting multiple-choice questions. This interactive quiz is designed to challenge your understanding of Scottish whisky. Are you a whisky connoisseur or just starting your whisky journey? Find out where you stand!
+Welcome to the Scottish Whisky Quiz! Get ready to put your knowledge to the test with 8 exciting multiple-choice questions. With its responsive design, the quiz is accessible on various devices. After completion, you'll receive instant feedback on your performance, helping you identify areas for improvement and enhancing your whisky knowledge.
+
+This interactive quiz is designed to be fun but also challenge your understanding of Scottish whisky. Are you a whisky connoisseur or just starting your whisky journey? Find out where you stand!
+
+![whisky quiz mockup](/assets/images/screenshots/whiskyquiz-mockup.png)
 
 ## Features
 ### Exisiting Features
+#### Start Page
+
+![whisky quiz start page](/assets/images/screenshots/startpage-screenshot.png)
+
+
+#### Question Page
+
+![whisky quiz question page](/assets/images/screenshots/questionpage-screenshot.png)
+
+#### Incorrect Answer
+
+![whisky quiz incorrect answer](/assets/images/screenshots/wronganswer-screenshot.png)
+
+
+#### Correct Answer
+
+![whisky quiz correct answer](/assets/images/screenshots/correctanswer-screenshot.png)
+
+#### Results Page
+
+![whisky quiz correct answer](/assets/images/screenshots/resultspage-screenshot.png)
 
 ## Testing
 
@@ -24,6 +49,9 @@ Welcome to the Scottish Whisky Quiz! Get ready to put your knowledge to the test
  - The most complex function has a cyclomatic complexity value of 3 while the median is 2.
 #### Accessibility 
  - I confirmed that the colours and fonts chosen are easy to read and accessible by running them through Lighthouse in Devtools.
+ - 
+ ![lighthouse in devtools](/assets/images/screenshots/lighthouse-screenshot.png)
+ 
 ### Unfixed Bugs
 No unfixed bugs
 
