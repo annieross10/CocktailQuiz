@@ -25,8 +25,8 @@
   
   #start-page {
     background: #fff;
-    padding: 60px;
-    width: 75%;
+    padding: 25px;
+    width: 70%;
     margin: 0 auto;
   }
   
@@ -45,7 +45,7 @@
   #quiz-container {
     background: #fff;
     padding: 25px;
-    width: 80%;
+    width:80%;
     margin: 0 auto;
     max-width: 700px;
     display: none;
