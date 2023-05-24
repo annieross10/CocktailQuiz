@@ -1,11 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Poppins, sans-serif;
   }
   
   body {
-    background: linear-gradient(#7e3f3f, #dfae77d0);
+    background: linear-gradient(#9c776c, #dfae77d0);
     background-attachment: fixed;
     padding-top: 60px;
   }
@@ -21,10 +25,9 @@
   
   #start-page {
     background: #fff;
-    padding: 30px;
-    width: 80%;
+    padding: 60px;
+    width: 75%;
     margin: 0 auto;
-    max-width: 700px;
   }
   
   #start-page h1 {
@@ -123,8 +126,8 @@
   #whiskyimagetwo {
     background: url('../images/whiskyimagetwo.png') no-repeat center center;
     width: 90%;
-    padding-top: 60px;
-    height: 290px;
+    padding-top: 50px;
+    height: 270px;
     margin: 0 auto;
     background-size: contain;
   }
