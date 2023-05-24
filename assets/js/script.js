@@ -174,9 +174,7 @@ function showResults() {
     <h1>Quiz Results</h1>
     <p>${message}</p>
     <div id="whiskyimagetwo"></div>
-  </div>
- 
-`
+  </div>`;
 }
 
 // Event listener for the "Next" button
