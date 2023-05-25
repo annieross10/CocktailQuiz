@@ -46,21 +46,21 @@ This interactive quiz is designed to be fun but also challenge your understandin
 
 ### Bugs
 #### Solved Bugs
-- I came across an issue whilst writing the javascript code - the end results kept on coming out wrong, i.e if you clicked answer 1 for question 2 the user would get one point (even though this was incorrect) as answer 1 was correct for question 1. I realised this was because the event listeners weren't removed for each question.
-- I solved this issue by adding a named event listener function <b>\answerButtonClickHandler</b> which is assigned as the event listener for each answer button. This function removes the previous event listener using removeEventListener before performing the necessary actions and checking the answer.
-- This is the code:
+- I came across an issue whilst writing the javascript code - the end results kept on coming out wrong, i.e if you clicked answer 1 for question 2 the user would get one point (even though this was incorrect) as answer 1 was correct for question 1. 
+    - I realised this was because the event listeners weren't removed for each question. 
+    - I solved this issue by adding a named event listener function <b>answerButtonClickHandler</b> which is assigned as the event listener for each answer button. This function removes the previous event listener using removeEventListener before performing the necessary actions and checking the answer.
+    - This is the code I used to fix the bug:
 
-<b>\ answerButton.removeEventListener("click", answerButtonClickHandler);
-    answerButton.addEventListener("click", answerButtonClickHandler);
-  }
-}
-function answerButtonClickHandler() {
-  const answerButton = this;
-  answerButton.disabled = true;
-  const answer = questions[currentQuestionIndex].answers[Array.from(answerButtons).indexOf(answerButton)];
-  checkAnswer(answer.correctAnswer, answerButton);
-  nextButton.disabled = false;
-}</b>
+    ![js screenshot 1](/assets/images/screenshots/javascriptcode1.png)
+    ![js screenshot 2](/assets/images/screenshots/javascriptcode2.png)
+
+- I wanted to add a start button at the beginning of the quiz as it was not originally implemented in the code.
+    - I added the necerssary HTML and CSS code, however, both the start page and the quiz container were displayed at the same time.
+    - I fixed this with using <b>\#quiz-container {display: none;}</b> which meant that the quiz container began hidden.
+    - I then used the following JavaScript code to ensure the quiz container would appear once the start button was clicked:
+
+
+
 
 ### Validator Testing
 
