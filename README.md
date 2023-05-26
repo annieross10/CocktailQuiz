@@ -94,8 +94,8 @@ After preparing the site for deployment, the next step was to host it on GitHub 
 
 - Go to the Settings tab of the Github Repository.
 - Under the code and automation section, I navigate to the Pages section.
-- In Github Pages, I select the main branch to deploy the page.
-- After selecting the main branch, the page will refresh and display a link to confirm the successful deployment.
+- In Github Pages, I select the master branch to deploy the page.
+- After selecting the master branch, the page will refresh and display a link to confirm the successful deployment.
 
 The live link can be found here - https://annieross10.github.io/whiskyquiz/
 
