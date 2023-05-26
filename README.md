@@ -1,4 +1,4 @@
-# whiskyquiz
+# Whisky Quiz!
 Welcome to the Scottish Whisky Quiz! Get ready to put your knowledge to the test with 8 exciting multiple-choice questions. With its responsive design, the quiz is accessible on various devices. After completion, you'll receive instant feedback on your performance, helping you identify areas for improvement and enhancing your whisky knowledge.
 
 This interactive quiz is designed to be fun but also challenge your understanding of Scottish whisky. Are you a whisky connoisseur or just starting your whisky journey? Find out where you stand!
@@ -8,59 +8,65 @@ This interactive quiz is designed to be fun but also challenge your understandin
 ## Features
 ### Exisiting Features
 #### Start Page
-- This feature is the start page of the quiz. It gives a brief overview of what to expect in the Quiz - Scottish Whisky - and it welcomes you with a fun image and eye catching colours.
-- The instructions are easy and clear to follow and once clicked on the start button at the bottom of the page, the quiz will begin immediately. 
+- The start page provides an overview of the quiz, introducing the topic of Scottish Whisky. It features an engaging image and eye-catching colors to capture the user's attention.
+- Clear and easy-to-follow instructions are provided, and clicking the start button at the bottom of the page initiates the quiz immediately.
 
 ![whisky quiz start page](/assets/images/screenshots/startpage-screenshot.png)
 
 #### Question Page
-- Once the start button is clicked on the first page, the first round of questions will commence.
-- The questions are shown within a question container so that the design is clear and concise. There are 4 multiple choice style questions that the user has to choose from and 8 further questions.
-- When hovering over the answers, the answers change colour which makes for a more interactive experience.
-- The 'Next' button will not work until the user has clicked on a question.
+- Once the start button is clicked, the quiz presents the first round of questions.
+- The questions are displayed within a question container, ensuring a clear and concise design. Each question offers 4 multiple-choice options, with a total of 8 questions.
+- Hovering over the answers triggers a color change, enhancing the interactive experience.
+- The "Next" button remains disabled until the user selects an answer.
 
 ![whisky quiz question page](/assets/images/screenshots/questionpage-screenshot.png)
 
 #### Incorrect Answer
-- If the user clicks on an incorrect answer, the button will then turn red to let the user know that they have chosen an incorrect answer.
-- The next button will then be enabled and the user will be able to click onto the next question.
-- This was designed so that the quiz is engaging.
+- If the user selects an incorrect answer, the button turns red, indicating the wrong choice.
+- The "Next" button is then enabled, allowing the user to proceed to the next question.
+- This interactive design element adds engagement to the quiz.
 
 ![whisky quiz incorrect answer](/assets/images/screenshots/wronganswer-screenshot.png)
 
-
 #### Correct Answer
-- If the user clicks on a correct answer, the button will then turn green to let the user know that they have chosen a correct answer.
-- The next button will then be enabled and the user will be able to click onto the next question.
-- This was designed so that the quiz is engaging.
+- When the user selects a correct answer, the button turns green, indicating the correct choice.
+- The "Next" button is then enabled, allowing the user to proceed to the next question.
+- This interactive design element adds engagement to the quiz.
 
 ![whisky quiz correct answer](/assets/images/screenshots/correctanswer-screenshot.png)
 
 #### Results Page
-- At the end of the quiz, there is a results page. The results from all the questions are counted up and shown alongside a message which changes depending on what result the user recieves.
-- This is accompanied with a friendly image of a whisky glass to keep the fun nature of the quiz.
+- At the end of the quiz, a results page is displayed. It shows the total score from all the questions, along with a message that changes based on the user's result.
+- A friendly image of a whisky glass accompanies the results, maintaining the fun nature of the quiz.
 
 ![whisky quiz correct answer](/assets/images/screenshots/resultspage-screenshot.png)
 
 ## Testing
+- I have tested the functionality of this page across multiple web browsers, including Chrome, Firefox, and Safari.
+- After using the DevTools device toolbar, I have confirmed that this page is responsive, visually appealing, and fully functional on all standard screen sizes.
+- I have verified that the "Start" button directs the user to the beginning of the quiz.
+- I have verified that the "Next" button is only functional after an answer is selected.
+- I have verified that the correct answers turn green when selected and the incorrect answers turn red when selected.
+- I have verified that the quiz is fully functional and there are no mistakes in the calculation of the score.
 
 ### Bugs
 #### Solved Bugs
-- I came across an issue whilst writing the javascript code - the end results kept on coming out wrong, i.e if you clicked answer 1 for question 2 the user would get one point (even though this was incorrect) as answer 1 was correct for question 1. 
-    - I realised this was because the event listeners weren't removed for each question. 
-    - I solved this issue by adding a named event listener function <b>answerButtonClickHandler</b> which is assigned as the event listener for each answer button. This function removes the previous event listener using removeEventListener before performing the necessary actions and checking the answer.
-    - This is the code I used to fix the bug:
+- While writing the JavaScript code, an issue was encountered where the end results were coming out wrong. 
+    - For example, if the user clicked answer 1 for question 2, the user would receive one point (even though this was incorrect) as answer 1 was correct for question 1.
+    - The issue was identified as the event listeners not being removed for each question.
+    - To solve this issue, a named event listener function, answerButtonClickHandler, was added and assigned as the event listener for each answer button. 
+    - This function removes the previous event listener using removeEventListener before performing the necessary actions and checking the answer.
+    -  The following code was used to fix the bug:
 
     ![js screenshot 1](/assets/images/screenshots/javascriptcode1.png)
     ![js screenshot 2](/assets/images/screenshots/javascriptcode2.png)
 
-- I wanted to add a start button at the beginning of the quiz as it was not originally implemented in the code.
-    - I added the necerssary HTML and CSS code, however, both the start page and the quiz container were displayed at the same time.
-    - I fixed this with using <b>\#quiz-container {display: none;}</b> which meant that the quiz container began hidden.
-    - I then used the following JavaScript code to ensure the quiz container would appear once the start button was clicked:
-
-
-
+- A start button was added at the beginning of the quiz, as it was not originally implemented in the code.
+    - The necessary HTML and CSS code were added, but both the start page and the quiz container were displayed at the same time.
+    - This was resolved by adding <b> #quiz-container { display: none; }</b>, which initially hides the quiz container.
+    - The following JavaScript code was used to ensure the quiz container appears once the start button is clicked:
+    
+    ![js screenshot 3](/assets/images/screenshots/javascriptcode3.png)
 
 ### Validator Testing
 
@@ -77,7 +83,7 @@ This interactive quiz is designed to be fun but also challenge your understandin
  - The most complex function has a cyclomatic complexity value of 3 while the median is 2.
 #### Accessibility 
  - I confirmed that the colours and fonts chosen are easy to read and accessible by running them through Lighthouse in Devtools.
- - 
+
  ![lighthouse in devtools](/assets/images/screenshots/lighthouse-screenshot.png)
  
 ### Unfixed Bugs
@@ -88,12 +94,18 @@ After preparing the site for deployment, the next step was to host it on GitHub 
 
 - Go to the Settings tab of the Github Repository.
 - Under the code and automation section, I navigate to the Pages section.
-- In Github Pages, I select the main branch to deploy the page.
-- After selecting the main branch, the page will refresh and display a link to confirm the successful deployment.
+- In Github Pages, I select the master branch to deploy the page.
+- After selecting the master branch, the page will refresh and display a link to confirm the successful deployment.
 
 The live link can be found here - https://annieross10.github.io/whiskyquiz/
 
 ## Credits
 ### Content
+- The font for the website was taken from [Google Fonts](https://fonts.google.com/)
+- The instructions and influence to create an aesthetic looking quiz (including the incorrect and correct colour idea) and also advice on the javascript functions for a fully working quiz taken from [This Youtube Tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1155s)
+- Steps taken to create the JavaScript functions of the quiz influenced by [This website tutorial](https://simplestepscode.com/javascript-quiz-tutorial/)
+- A deeper understanding of JavaScript was taken from [This youtube tutorial](https://www.youtube.com/watch?v=DRaWr0Dcbl0) and [This youtube tutorial](https://www.youtube.com/watch?v=zgHim4ZDpZY)
 
 ### Media
+The images whiskyimage and whiskyimagetwo are taken from [freepik](https://www.freepik.com/)
+
