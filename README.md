@@ -42,6 +42,12 @@ This interactive quiz is designed to be fun but also challenge your understandin
 ![whisky quiz correct answer](/assets/images/screenshots/resultspage-screenshot.png)
 
 ## Testing
+- I have tested the functionality of this page across multiple web browsers, including Chrome, Firefox, and Safari.
+- After using the DevTools device toolbar, I have confirmed that this page is responsive, visually appealing, and fully functional on all standard screen sizes.
+- I have verified that the "Start" button directs the user to the beginning of the quiz.
+- I have verified that the "Next" button is only functional after an answer is selected.
+- I have verified that the correct answers turn green when selected and the incorrect answers turn red when selected.
+- I have verified that the quiz is fully functional and there are no mistakes in the calculation of the score.
 
 ### Bugs
 #### Solved Bugs
@@ -57,7 +63,7 @@ This interactive quiz is designed to be fun but also challenge your understandin
 
 - A start button was added at the beginning of the quiz, as it was not originally implemented in the code.
     - The necessary HTML and CSS code were added, but both the start page and the quiz container were displayed at the same time.
-    - This was resolved by adding <b>\ #quiz-container { display: none; }</b>, which initially hides the quiz container.
+    - This was resolved by adding <b> #quiz-container { display: none; }</b>, which initially hides the quiz container.
     - The following JavaScript code was used to ensure the quiz container appears once the start button is clicked:
     
     ![js screenshot 3](/assets/images/screenshots/javascriptcode3.png)
