@@ -105,6 +105,7 @@ The live link can be found here - https://annieross10.github.io/whiskyquiz/
 - The instructions and influence to create an aesthetic looking quiz (including the incorrect and correct colour idea) and also advice on the javascript functions for a fully working quiz taken from [This Youtube Tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1155s)
 - Steps taken to create the JavaScript functions of the quiz influenced by [This Website Tutorial](https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/) and [This Website Tutorial](https://www.codingninjas.com/codestudio/library/how-to-create-a-javascript-quiz-code)
 - A deeper understanding of JavaScript was taken from [This Youtube Tutorial](https://www.youtube.com/watch?v=DRaWr0Dcbl0) and [This Youtube Tutorial](https://www.youtube.com/watch?v=zgHim4ZDpZY)
+- Learning about DOM manipulation through [This Website](https://www.scaler.com/topics/javascript-dom-manipulation/)
 
 ### Media
 The images whiskyimage and whiskyimagetwo are taken from [freepik](https://www.freepik.com/)
