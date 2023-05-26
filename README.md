@@ -104,6 +104,7 @@ The live link can be found here - https://annieross10.github.io/whiskyquiz/
 - The font for the website was taken from [Google Fonts](https://fonts.google.com/)
 - The instructions and influence to create an aesthetic looking quiz (including the incorrect and correct colour idea) and also advice on the javascript functions for a fully working quiz taken from [This Youtube Tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1155s)
 - Steps taken to create the JavaScript functions of the quiz influenced by [This website tutorial](https://simplestepscode.com/javascript-quiz-tutorial/)
+- A deeper understanding of JavaScript was taken from [This youtube tutorial](https://www.youtube.com/watch?v=DRaWr0Dcbl0) and [This youtube tutorial](https://www.youtube.com/watch?v=zgHim4ZDpZY)
 
 ### Media
 The images whiskyimage and whiskyimagetwo are taken from [freepik](https://www.freepik.com/)
