@@ -1,75 +1,183 @@
 // quiz questions and answers
 const questions = [
   {
-    question: "What is the main ingredient used in the production of Scottish Whisky?",
+    question: "What method is used to make a Scotch Mist?",
     answers: [
-      { text: "Barley", correctAnswer: true },
-      { text: "Rye", correctAnswer: false },
-      { text: "Corn", correctAnswer: false },
-      { text: "Wheat", correctAnswer: false },
+      { text: "Build", correctAnswer: false },
+      { text: "Shake and Charge", correctAnswer: false },
+      { text: "Shake and Fine strain", correctAnswer: true },
+      { text: "Roll and Stretch", correctAnswer: false },
     ],
   },
   {
-    question: "Which region of Scotland is known for producing whisky with a distinctive smoky flavour?",
+    question: "What flavour of jam is in an Elderflower and Berry Spritz?",
     answers: [
-      { text: "Speyside", correctAnswer: false },
-      { text: "Highlands", correctAnswer: false },
-      { text: "Islay", correctAnswer: true },
-      { text: "Lowlands", correctAnswer: false },
+      { text: "Strawberry", correctAnswer: false },
+      { text: "Raspberry", correctAnswer: true },
+      { text: "Blackberry", correctAnswer: false },
+      { text: "Marmalade", correctAnswer: false },
     ],
   },
   {
-    question: "Which well-known Scottish Whisky brand uses a stag's head as its logo?",
+    question: "What type of glass is a Clover Club served in?",
     answers: [
-      { text: "Talisker", correctAnswer: false },
-      { text: "Dalmore", correctAnswer: true },
-      { text: "Bowmore", correctAnswer: false },
-      { text: "Aberfeldy", correctAnswer: false },
+      { text: "Highball", correctAnswer: false },
+      { text: "Coupe", correctAnswer: true },
+      { text: "Old Fashioned", correctAnswer: false },
+      { text: "Wine Glass", correctAnswer: false },
     ],
   },
   {
-    question: "Which Scottish whisky is often called the The King of Malts and is known for its smooth, honeyed character? ",
+    question: "What type of vodka do we use in a Napolean Complex? ",
     answers: [
-      { text: "Talisker", correctAnswer: false },
-      { text: "Balvenie", correctAnswer: false },
-      { text: "Macallan", correctAnswer: false },
-      { text: "Glenlivet", correctAnswer: true },
+      { text: "42 Below", correctAnswer: false },
+      { text: "Smirnoff", correctAnswer: false },
+      { text: "Finlandia", correctAnswer: false },
+      { text: "Belvedere", correctAnswer: true },
     ],
   },
   {
-    question: "Which Scottish whisky is made exclusively from malted barley and produced in a single distillery? ",
+    question: "What type of bitters do we use in a perfect 10? ",
     answers: [
-      { text: "Glenmorangie", correctAnswer: true },
-      { text: "Johnnie Walker", correctAnswer: false },
-      { text: "Laphroig", correctAnswer: false },
-      { text: "Glenfiddoch", correctAnswer: false },
+      { text: "Angostura", correctAnswer: false },
+      { text: "Orange", correctAnswer: false },
+      { text: "Cherry", correctAnswer: true },
+      { text: "Grapefruit", correctAnswer: false },
     ],
   },
   {
-    question: "Which Scottish whisky is known for its peaty and smoky flavor, often described as medicinal? ",
+    question: "What are the 3 ingredients in a Negroni? ",
     answers: [
-      { text: "Dalwhinnie", correctAnswer: false },
-      { text: "Glenlivet", correctAnswer: false },
-      { text: "Laphroaig", correctAnswer: true },
-      { text: "Glenfiddich", correctAnswer: false },
+      { text: "Campari, Dry Vermouth, Vodka", correctAnswer: false },
+      { text: "Campari, Sweet Vermouth, Cointreau", correctAnswer: false },
+      { text: "Campari, Sweet Vermouth, Gin", correctAnswer: true },
+      { text: "Aperol, Dry Vermouth, Gin", correctAnswer: false },
     ],
   },
   {
-    question: "What is the traditional ingredient used in the production of Talisker whisky that gives it a unique maritime character?  ",
+    question: "After building a Glasgow mule, what do we top it up with?",
     answers: [
-      { text: "Brine", correctAnswer: true },
-      { text: "Seaweed", correctAnswer: false },
-      { text: "Peat", correctAnswer: false },
-      { text: "Heather", correctAnswer: false },
+      { text: "Ginger Beer", correctAnswer: true },
+      { text: "Soda Water", correctAnswer: false },
+      { text: "Ginger Ale", correctAnswer: false },
+      { text: "Elderflower Tonic", correctAnswer: false },
     ],
   },
   {
-    question: "What is the minimum aging requirement for Scotch whisky?  ",
+    question: "Bombay Saphire Gin, Soda Water and Sugar make up a Tom Collins. What is the missing ingredient?  ",
     answers: [
-      { text: "2 years", correctAnswer: false },
-      { text: "5 years", correctAnswer: false },
-      { text: "10 years", correctAnswer: true },
-      { text: "15 years", correctAnswer: false },
+      { text: "Grenedine", correctAnswer: false },
+      { text: "Cointreau", correctAnswer: false },
+      { text: "Lemon", correctAnswer: true },
+      { text: "Lime", correctAnswer: false },
+    ],
+  },
+  {
+    question: "What is the fruit juice found in Tartan Summer?",
+    answers: [
+      { text: "Pineapple Juice", correctAnswer: false },
+      { text: "Orange Juice", correctAnswer: true },
+      { text: "Cranberry Juice", correctAnswer: false },
+      { text: "Apple Juice", correctAnswer: false },
+    ],
+  },
+  {
+    question: "Tequila and Lime are ingredients in a margharita. What is the missing alcoholic ingredient?",
+    answers: [
+      { text: "Bombay Saphire Gin", correctAnswer: false },
+      { text: "Sloe Gin", correctAnswer: false },
+      { text: "Cointreau", correctAnswer: true },
+      { text: "Mezcal", correctAnswer: false },
+    ],
+  },
+  {
+    question: "What method is used to make a Bloody Mary?",
+    answers: [
+      { text: "Shake and Fine Strain", correctAnswer: false },
+      { text: "Roll and Stretch", correctAnswer: true },
+      { text: "Build", correctAnswer: false },
+      { text: "Shake and Charge", correctAnswer: false },
+    ],
+  },
+  {
+    question: "What garnish do we use for a Gardener's choice?",
+    answers: [
+      { text: "Lemon", correctAnswer: false },
+      { text: "Lime", correctAnswer: false },
+      { text: "Mint Sprigg", correctAnswer: false },
+      { text: "Cucumber", correctAnswer: true },
+    ],
+  },
+  {
+    question: "What are the two whiskeys we use in our Perfect 10 mix?",
+    answers: [
+      { text: "Glenfiddich and Ardbeg", correctAnswer: false },
+      { text: "Laphroig and Glenfiddich", correctAnswer: false },
+      { text: "Laphroig and Ardbeg", correctAnswer: false },
+      { text: "Glenmorangie and Ardbeg", correctAnswer: true },
+    ],
+  },
+  {
+    question: "Which cocktail do we use brown sugar in?",
+    answers: [
+      { text: "Scotch Mist", correctAnswer: true },
+      { text: "Glasgow Mule", correctAnswer: false },
+      { text: "Citizen Sprtiz", correctAnswer: false },
+      { text: "Perfect 10", correctAnswer: false },
+    ],
+  },
+  {
+    question: "What volume of Hennessy do we put in a Hennessy Highball?",
+    answers: [
+      { text: "15ml", correctAnswer: false },
+      { text: "25ml", correctAnswer: false },
+      { text: "35ml", correctAnswer: false },
+      { text: "50ml", correctAnswer: true },
+    ],
+  },
+  {
+    question: "How many mls of tomato juice goes into a bloody mary??",
+    answers: [
+      { text: "50ml", correctAnswer: false },
+      { text: "75ml", correctAnswer: false },
+      { text: "100ml", correctAnswer: true },
+      { text: "150ml", correctAnswer: false },
+    ],
+  },
+  {
+    question: "What ingredients are in a Citizen Spritz?",
+    answers: [
+      { text: "Lime, Honey, Sloe Gin, Campari, Prosecco", correctAnswer: false },
+      { text: "Lemon, Honey, Sloe Gin, Aperol, Prosecco", correctAnswer: true },
+      { text: "Lime, Brown Sugar, Sloe Gin, Aperol, Prosecco", correctAnswer: false },
+      { text: "Lemon, Sugar, Bombay Saphire, Aperol, Proescco", correctAnswer: false },
+    ],
+  },
+  {
+    question: "What ingredient is used to top up a mircale worker?",
+    answers: [
+      { text: "Ginger Beer", correctAnswer: false },
+      { text: "Soda Water", correctAnswer: false },
+      { text: "Elderflower Tonic", correctAnswer: false},
+      { text: "Mediterranean Tonic", correctAnswer: true },
+    ],
+  },
+  {
+    question: "Which of these 2 ingredients are found in a Cosmopolitan?",
+    answers: [
+      { text: "Gin, Sweet Vermouth", correctAnswer: false },
+      { text: "Vodka, Cointreau", correctAnswer: true },
+      { text: "Gin, Cointreau", correctAnswer: false },
+      { text: "Vodka, Creme De Mure", correctAnswer: false },
+    ],
+  },
+  {
+    question: "How many mls of soda water do we use in an Aperol Sprtiz?",
+    answers: [
+      { text: "25ml", correctAnswer: true },
+      { text: "50ml", correctAnswer: false },
+      { text: "100ml", correctAnswer: false },
+      { text: "Top it up", correctAnswer: false },
     ],
   },
 ];
@@ -86,6 +194,12 @@ const answerButtons = document.getElementsByClassName("answers");
 const nextButton = document.getElementById("next-button");
 const scoreElement = document.getElementById("score");
 const quizContainer = document.getElementById("quiz-container");
+const images = {
+  highScoreImage: 'assets/images/high_score_image.jpg',
+  averageScoreImage: 'assets/images/averagescore_image.jpg',
+  lowScoreImage: 'assets/images/low_score_image.jpg',
+};
+
 
 // Function to start the quiz
 function startQuiz() {
@@ -162,18 +276,27 @@ function nextQuestion() {
 function showResults() {
   const quizContainer = document.getElementById("quiz-container");
   let message;
-  if (score === 8) {
-    message = "Congratulations! You scored a perfect 8 out of 8!";
-  } else if (score >= 5) {
-    message = `Good job! You scored ${score} out of 8.`;
+  if (score === 20) {
+    message = `<strong style="font-weight: bold;">You have scored <span style="color: pink;">20</span> out of 20!</strong><br><br> 
+    Bravo, Mixologist Extraordinaire!<br><br> 
+    You've earned the prestigious title of 'Cocktail Connoisseur'! Your knowledge of mixology is so impressive that even the Martini shivers in its glass with envy. Cheers to your cocktail wisdom, and may your future endeavors be shaken, stirred, and always delightful!`;
+    imageSource = images.highScoreImage;
+  } else if (score >= 10) {
+    message = `<strong style="font-weight: bold;">You scored <span style="color: pink;">${score}</span> out of 20.</strong><br><br>
+    Great job, Cocktail Apprentice!<br><br>
+    You're making waves and mixing things up quite nicely. With a bit more practice, you'll soon be crafting cocktails like a pro! Keep the spirits high and your shaker busier than a bee in a flower garden. Your cocktail mastery is just a few sips away!`;
+    imageSource = images.averageScoreImage;
   } else {
-    message = `You scored ${score} out of 8. Keep practicing!`;
+    message = `<strong style="font-weight: bold;">You scored <span style="color: pink;">${score}</span> out of 20.</strong><br><br>
+    Oops! Looks like you've got some cocktail homework to do.<br><br> 
+    Well, it seems like your cocktail journey is just beginning! Don't worry, even the best bartenders started with a few spills and mix-ups. Keep those spirits high and your curiosity stirred. More cocktail adventures await, so keep sipping, learning, and soon you'll be raising your glass to success!`;
+    imageSource = images.lowScoreImage;
   }
   quizContainer.innerHTML = `
   <div class="quiz-results">
-    <h1>Quiz Results</h1>
+    <h1>Your Results are here!</h1>
     <p>${message}</p>
-    <div id="whiskyimagetwo"></div>
+    <img src="${imageSource}" alt="Result Image" id="result-image">
   </div>`;
 }
 

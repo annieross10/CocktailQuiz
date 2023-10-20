@@ -2,34 +2,43 @@
 <html lang="en">
 <head>
   <title>Quiz</title>
-  <meta charset = "UTF-8">
-  <meta name="viewport" content="width-device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-  <!--Start Page-->
-  <div id="start-page">
-    <h1>Welcome to the Whisky Quiz!</h1>
-    <p>Test your knowledge about Scottish Whisky. Click the Start button to begin the quiz.</p>
+  <!-- Start Page -->
+  <div class="container" id="start-page">
+    <h1 class="display-4">Think you're a COCKTAIL CONNOISSEUR ?</h1>
+    <p class="lead">This quiz blends Signature and Classic cocktails/mocktails knowledge for an exciting challenge!</p>
+<p>With 20 questions on the menu, choose your answers carefully – once selected, there's no turning back.</p>
+<p>Good Luck!</p>
+
     <div id="whiskyimage"></div>
-    <button id="start-button"><strong>Start Quiz</strong></button>
+    <button class="btn btn-primary" id="start-button"><strong>Start Quiz</strong></button>
   </div>
-  <!--Quiz Page-->
-  <div id="quiz-container">
-    <h1>Whisky Quiz</h1>
-      <div id="question-container" class="hidden">
-        <p id="question"></p>
-        <button class="answers">answer1</button>
-        <button class="answers">answer2</button>
-        <button class="answers">answer3</button>
-        <button class="answers">answer4</button>
-      </div>
-      <div id="next-button-container">
-    <button id="next-button" disabled><strong>Next</strong></button>
-      </div>
+  <!-- Quiz Page -->
+  <div class="container" id="quiz-container">
+    <h1 class="display-4"></h1>
+    <div id="question-container" class="hidden">
+      <p id="question"></p>
+      <button class="btn btn-custom answers">answer1</button>
+      <button class="btn btn-custom answers">answer2</button>
+      <button class="btn btn-custom answers">answer3</button>
+      <button class="btn btn-custom answers">answer4</button>
+    </div>
+    <div id="next-button-container">
+      <button class="btn btn-primary" id="next-button" disabled><strong>Next</strong></button>
+    </div>
     <p id="score" style="display: none;">Score: 0</p>
   </div>
   <script src="assets/js/script.js"></script>
+</body>
 </html>
+
