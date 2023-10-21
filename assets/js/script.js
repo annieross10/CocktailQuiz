@@ -136,7 +136,7 @@ const questions = [
     ],
   },
   {
-    question: "How many mls of tomato juice goes into a bloody mary??",
+    question: "How many mls of tomato juice goes into a bloody mary?",
     answers: [
       { text: "50ml", correctAnswer: false },
       { text: "75ml", correctAnswer: false },

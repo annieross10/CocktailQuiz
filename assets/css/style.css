@@ -22,7 +22,7 @@ body {
 
 #start-page {
   background: #fff;
-  padding: 30px;
+  padding: 27px;
   width: 90%;
   margin: 0 auto;
 }
@@ -89,19 +89,20 @@ body {
 
  /*Buttons*/ 
 #next-button {
-  background: #352430;
+  background: #7a0431;
   color: #fff;
   padding: 10px;
-  width: 100px;
+  width: 120px;
 }
 #next-button-container {
   text-align: center;
+  padding: 15px;
 }
 
 #start-button {
   background: #7a0431;
   color: #fff;
-  padding: 10px;
+  padding: 15px;
   width: 160px;
   margin: 0 auto;
   display: block;
