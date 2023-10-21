@@ -82,7 +82,7 @@ const questions = [
     ],
   },
   {
-    question: "Tequila and Lime are ingredients in a margharita. What is the missing alcoholic ingredient?",
+    question: "Tequila and Lime are ingredients in a Margarita. What is the missing alcoholic ingredient?",
     answers: [
       { text: "Bombay Saphire Gin", correctAnswer: false },
       { text: "Sloe Gin", correctAnswer: false },
